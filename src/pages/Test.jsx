@@ -39,7 +39,7 @@ const Test = ({ workplan, empId , title , empName }) => {
 
     const tableData = employeeShifts.map(shift => [
       shift.day,
-      shift.shift,
+      shift.shift == 'morning' ? 'F' : shift.shift == 'evening' ? 'S' : 'N'  ,
       
     ]);
 
