@@ -75,9 +75,9 @@ const Plan = () => {
 
     const headers = [
       { title: "Day", dataKey: "day" },
-      { title: "Morning", dataKey: "morning" },
-      { title: "Evening", dataKey: "evening" },
-      { title: "Night", dataKey: "night" }
+      { title: "F", dataKey: "morning" },
+      { title: "S", dataKey: "evening" },
+      { title: "N", dataKey: "night" }
     ];
 
     const pdfData = plan.map((dayShifts, index) => {
