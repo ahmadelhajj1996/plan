@@ -150,12 +150,12 @@ const downloadExcel = () => {
     writeFile(wb, `${empName}_shifts_${months[current]}.xlsx`);
 };
   return (
-    <div>
+    <div className="flex gap-x-12 ms-32">
       <div onClick={downloadPDF}>
-        {title}
+        PDF 
       </div>
-       <div onClick={downloadExcel} style={{ marginTop: '10px' }}>
-        {title} (Excel)
+       <div onClick={downloadExcel}>
+         Excel
       </div>
     </div>
   );
